@@ -45,7 +45,6 @@ async def get_password_hash(password):
 
 async def authenticate_user(username: str, password: str, db: Session):
     user = await get_user(db, username)
-    print(user)
     if not user:
         return False
     if not await verify_password(password, user.hashed_password):

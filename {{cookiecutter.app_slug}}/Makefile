@@ -24,6 +24,7 @@ clean: cleancache
 	
 devenv: $(VENV)/bin/activate tox.ini pytest.ini .pre-commit-config.yaml
 	$(PIP) install black pre-commit pydocstyle pytest pytest-clarity pytest-dotenv tox ruff httpx isort
+	if [ ! -d ".git" ]; then git init; fi
 	pre-commit install
 	
 precommit: devenv
