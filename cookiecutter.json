@@ -1,0 +1,9 @@
+{
+    "app_name": "Base Project",
+    "app_slug": "{{ cookiecutter.app_name|lower|replace(' ', '-') }}",
+    "db_username": "change it",
+    "db_password": "change it",
+    "oracle_dsn": "change it",
+    "app_admin_name": "admin",
+    "app_admin_pass": "change it"
+}
