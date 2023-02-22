@@ -33,4 +33,8 @@ precommit: devenv
 	pre-commit run --all-files
 	tox
 
+gitorigin: precommit
+	@printf "git remote add origin <REMOTE_URL>"
+	@printf "git push origin main"
+
 include files.mk
