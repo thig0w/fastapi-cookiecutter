@@ -7,7 +7,8 @@ from src.{{cookiecutter.app_slug}} import config
 
 logger.debug("Creating Oracle DB engine")
 logger.trace(
-    f"DB engine Configs: {config.DATABASE_URL} - {config.thick_mode} - {config.DB_CONNECT_ARGS}"
+    f"DB engine Configs:\
+        {config.DATABASE_URL} - {config.thick_mode} - {config.DB_CONNECT_ARGS}"
 )
 engine = create_engine(
     config.DATABASE_URL,
