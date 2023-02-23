@@ -14,7 +14,7 @@ from sqlalchemy import MetaData, Table
 from sqlalchemy.dialects import oracle
 import asyncio
 
-from src.{{ cookiecutter.app_name}}.api.user.business import get_password_hash
+from src.{{ cookiecutter.app_slug}}.api.user.business import get_password_hash
 
 load_dotenv()
 
